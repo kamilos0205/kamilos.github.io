@@ -20,14 +20,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 60px;
+    gap: 20px; /* mniejszy odstęp między obrazkiem a napisem */
     position: relative;
   }
 
   /* --- OBRAZKI --- */
   .image-wrapper {
-    width: 220px;
-    height: 220px;
+    width: 140px;   /* mniejszy rozmiar obrazka */
+    height: 140px;
     position: relative;
     overflow: hidden;
   }
@@ -38,7 +38,7 @@
     object-fit: contain;
     opacity: 0;
     position: absolute;
-    transform: translateX(200px);
+    transform: translateX(150px);
     transition: all 1s ease-in-out;
   }
 
@@ -48,29 +48,29 @@
   }
 
   .image.slide-left {
-    transform: translateX(-200px);
+    transform: translateX(-150px);
     opacity: 0;
   }
 
   /* --- NAPISY --- */
   .text-wrapper {
-    width: 400px;
-    height: 120px;
+    width: auto;
+    height: 150px;
     position: relative;
-    color: black;
   }
 
   .text {
     position: absolute;
     width: 100%;
-    text-align: center;
-    font-size: 3rem;
-    font-weight: 700;
+    text-align: left;
+    font-size: 4rem; /* powiększony tekst */
+    font-weight: 800;
     color: white;
-    text-shadow: 0 0 20px rgba(255,255,255,0.4);
+    text-shadow: 0 0 20px rgba(255,255,255,0.5);
     opacity: 0;
     transform: scale(0.5);
     transition: all 1s ease-in-out;
+    line-height: 150px;
   }
 
   .text.active {
@@ -120,4 +120,3 @@
 
 </body>
 </html>
-
