@@ -87,19 +87,29 @@
   <div class="image-wrapper">
     <img id="img1" class="image active" src="3.png" alt="Obrazek 1">
     <img id="img2" class="image" src="2.png" alt="Obrazek 2">
+    <img id="img3" class="image" src="1.png" alt="Obrazek 3">
   </div>
 
   <!-- napis po prawej -->
   <div class="text-wrapper">
     <div id="text1" class="text active">Suuuiiiiii</div>
     <div id="text2" class="text">End Live</div>
+    <div id="text3" class="text">67</div>
   </div>
 </div>
 
 <script>
   let index = 0;
-  const texts = [document.getElementById('text1'), document.getElementById('text2')];
-  const imgs = [document.getElementById('img1'), document.getElementById('img2')];
+  const texts = [
+    document.getElementById('text1'),
+    document.getElementById('text2'),
+    document.getElementById('text3')
+  ];
+  const imgs = [
+    document.getElementById('img1'),
+    document.getElementById('img2'),
+    document.getElementById('img3')
+  ];
 
   setInterval(() => {
     // Dezaktywuj obecny
@@ -116,11 +126,12 @@
       texts[index].classList.add('active');
       imgs[index].classList.add('active');
     }, 300);
-  }, 4000); // zmiana co 4 sekundy
+  }, 4000);
 </script>
 
 </body>
 </html>
+
 
 
 
